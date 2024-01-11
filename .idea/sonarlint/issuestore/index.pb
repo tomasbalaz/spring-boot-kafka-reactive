@@ -34,3 +34,5 @@ t
 Dproducer/src/main/java/sk/balaz/producer/config/WebClientConfig.java,0/6/0658914fe3a43714157cccadd03e194021f3286b
 x
 Hproducer/src/main/java/sk/balaz/producer/producer/WikimediaProducer.java,b/6/b6cf2004c59f5e77100dfe00383124a2637e1acd
+|
+Lproducer/src/main/java/sk/balaz/producer/stream/WikimediaStreamConsumer.java,c/e/cea2ee3ecf0cc4f7ff57f90905690e5a4e03d7af
