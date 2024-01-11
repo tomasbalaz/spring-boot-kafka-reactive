@@ -32,3 +32,5 @@ y
 Iproducer/src/main/java/sk/balaz/producer/config/WikimediaTopicConfig.java,8/d/8dc9aba3abdcf5ca31926f34a6886b56cc947c1e
 t
 Dproducer/src/main/java/sk/balaz/producer/config/WebClientConfig.java,0/6/0658914fe3a43714157cccadd03e194021f3286b
+x
+Hproducer/src/main/java/sk/balaz/producer/producer/WikimediaProducer.java,b/6/b6cf2004c59f5e77100dfe00383124a2637e1acd
