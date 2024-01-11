@@ -28,3 +28,7 @@ q
 Aconsumer/src/main/java/sk/balaz/consumer/ConsumerApplication.java,1/e/1e7d8b9d1e81f059278ac7666c7d33b7f1bcc52a
 q
 Aproducer/src/main/java/sk/balaz/producer/ProducerApplication.java,b/1/b1fa3a92c61a8e6e5fc21de5edddff4918daaabd
+y
+Iproducer/src/main/java/sk/balaz/producer/config/WikimediaTopicConfig.java,8/d/8dc9aba3abdcf5ca31926f34a6886b56cc947c1e
+t
+Dproducer/src/main/java/sk/balaz/producer/config/WebClientConfig.java,0/6/0658914fe3a43714157cccadd03e194021f3286b
