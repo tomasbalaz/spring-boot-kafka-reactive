@@ -1,6 +1,5 @@
 package sk.balaz.producer.stream;
 
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -23,9 +22,10 @@ public class WikimediaStreamConsumer {
 
     public void consumeStreamAndPublish() {
         webClient.get()
-                .uri("stream/recentchange")
+                .uri("/stream/recentchange")
                 .retrieve()
                 .bodyToFlux(String.class)
-                .subscribe(log::info);
+//                .subscribe(log::info);
+                .subscribe(producer::sendMessage);
     }
 }

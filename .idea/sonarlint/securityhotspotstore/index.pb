@@ -36,3 +36,5 @@ x
 Hproducer/src/main/java/sk/balaz/producer/producer/WikimediaProducer.java,b/6/b6cf2004c59f5e77100dfe00383124a2637e1acd
 |
 Lproducer/src/main/java/sk/balaz/producer/stream/WikimediaStreamConsumer.java,c/e/cea2ee3ecf0cc4f7ff57f90905690e5a4e03d7af
+v
+Fproducer/src/main/java/sk/balaz/producer/rest/WikimediaController.java,f/e/fe9bea8eb45afdcc98a8b7b916cd87e038ed4c2f

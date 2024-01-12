@@ -4,28 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9cdddad-b0dd-4d07-a520-570530a8b4ee" name="Changes" comment="Created application spring-boot-kafka-reactive">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/sk/balaz/consumer/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/sk/balaz/producer/Application.java" afterDir="false" />
+    <list default="true" id="b9cdddad-b0dd-4d07-a520-570530a8b4ee" name="Changes" comment=" Create the Wikimedia Stream consumer">
+      <change afterPath="$PROJECT_DIR$/producer/src/main/java/sk/balaz/producer/rest/WikimediaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/sk/balaz/producer/stream/WikimediaStreamConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/sk/balaz/producer/stream/WikimediaStreamConsumer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="onto" value="c684e510b37d8daf6adc5c41eba8e12f6640e160" />
+  </component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "contexts": [
+    {
+      "name": "aks-apps-crt"
+    }
+  ],
+  "isMigrated": true
+}]]></component>
+  <component name="KubernetesSettings">
+    <option name="contextName" value="aks-apps-crt" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -43,10 +57,17 @@
     "Maven.producer [install].executor": "Run",
     "Maven.spring-boot-kafka-reactive [clean].executor": "Run",
     "Maven.spring-boot-kafka-reactive [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "Spring Boot.Application (1).executor": "Run",
+    "Spring Boot.ConsumerApplication.executor": "Run",
+    "Spring Boot.ProducerApplication.executor": "Run",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/tomas/IdeaProjects/Experiments/spring-boot-kafka-introduction",
     "node.js.detected.package.eslint": "true",
@@ -54,10 +75,20 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.Application (1)">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ProducerApplication">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -88,9 +119,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="consumer" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="sk.balaz.consumer.Application" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="sk.balaz.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="sk.balaz.consumer.ConsumerApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sk.balaz.consumer.*" />
@@ -101,16 +139,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="consumer" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="sk.balaz.Application" />
+    <configuration name="ProducerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="producer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="sk.balaz.producer.ProducerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sk.balaz.producer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.Application (1)" />
+        <item itemvalue="Spring Boot.ProducerApplication" />
+        <item itemvalue="Spring Boot.ConsumerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -123,8 +168,57 @@
       <option name="presentableId" value="Default" />
       <updated>1704976020761</updated>
       <workItem from="1704976021806" duration="1000" />
-      <workItem from="1704976192329" duration="1669000" />
+      <workItem from="1704976192329" duration="7777000" />
     </task>
+    <task id="LOCAL-00001" summary="Created application spring-boot-kafka-reactive">
+      <option name="closed" value="true" />
+      <created>1704977937746</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704977937746</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Created application.yml for consumer and producer application">
+      <option name="closed" value="true" />
+      <created>1704978382679</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704978382679</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Configure the producer">
+      <option name="closed" value="true" />
+      <created>1704978724776</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704978724776</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Configure the producer">
+      <option name="closed" value="true" />
+      <created>1704978727698</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704978727698</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Create the Wikimedia Kafka Producer">
+      <option name="closed" value="true" />
+      <created>1704979073111</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704979073112</updated>
+    </task>
+    <task id="LOCAL-00006" summary=" Create the Wikimedia Stream consumer">
+      <option name="closed" value="true" />
+      <created>1704979806846</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704979806846</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +237,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created application spring-boot-kafka-reactive" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created application spring-boot-kafka-reactive" />
+    <MESSAGE value="Created application.yml for consumer and producer application" />
+    <MESSAGE value="Configure the producer" />
+    <MESSAGE value="Create the Wikimedia Kafka Producer" />
+    <MESSAGE value=" Create the Wikimedia Stream consumer" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Create the Wikimedia Stream consumer" />
   </component>
 </project>
