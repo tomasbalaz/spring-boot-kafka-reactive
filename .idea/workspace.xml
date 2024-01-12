@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9cdddad-b0dd-4d07-a520-570530a8b4ee" name="Changes" comment=" Create the Wikimedia Stream consumer">
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/sk/balaz/producer/rest/WikimediaController.java" afterDir="false" />
+    <list default="true" id="b9cdddad-b0dd-4d07-a520-570530a8b4ee" name="Changes" comment="Consume and Publish to Kafka Topic">
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/sk/balaz/consumer/config/WikimediaTopicConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/sk/balaz/consumer/consumer/WikimediaConsumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/src/main/java/sk/balaz/producer/stream/WikimediaStreamConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/sk/balaz/producer/stream/WikimediaStreamConsumer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +78,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="sk.balaz.consumer.config" />
+      <recent name="sk.balaz.consumer" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -154,8 +159,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ProducerApplication" />
         <item itemvalue="Spring Boot.ConsumerApplication" />
+        <item itemvalue="Spring Boot.ProducerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +173,7 @@
       <option name="presentableId" value="Default" />
       <updated>1704976020761</updated>
       <workItem from="1704976021806" duration="1000" />
-      <workItem from="1704976192329" duration="7777000" />
+      <workItem from="1704976192329" duration="9686000" />
     </task>
     <task id="LOCAL-00001" summary="Created application spring-boot-kafka-reactive">
       <option name="closed" value="true" />
@@ -218,7 +223,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704979806846</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Consume and Publish to Kafka Topic">
+      <option name="closed" value="true" />
+      <created>1705059542871</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1705059542872</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +254,7 @@
     <MESSAGE value="Configure the producer" />
     <MESSAGE value="Create the Wikimedia Kafka Producer" />
     <MESSAGE value=" Create the Wikimedia Stream consumer" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Create the Wikimedia Stream consumer" />
+    <MESSAGE value="Consume and Publish to Kafka Topic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Consume and Publish to Kafka Topic" />
   </component>
 </project>

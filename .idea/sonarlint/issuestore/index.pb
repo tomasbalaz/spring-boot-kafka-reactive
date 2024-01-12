@@ -38,3 +38,11 @@ Hproducer/src/main/java/sk/balaz/producer/producer/WikimediaProducer.java,b/6/b
 Lproducer/src/main/java/sk/balaz/producer/stream/WikimediaStreamConsumer.java,c/e/cea2ee3ecf0cc4f7ff57f90905690e5a4e03d7af
 v
 Fproducer/src/main/java/sk/balaz/producer/rest/WikimediaController.java,f/e/fe9bea8eb45afdcc98a8b7b916cd87e038ed4c2f
+t
+Dconsumer/src/main/java/sk/balaz/consumer/config/WebClientConfig.java,6/b/6b1b47440bde5a33c79f4a3a3ab51891eba5dc05
+y
+Iconsumer/src/main/java/sk/balaz/consumer/config/WikimediaTopicConfig.java,6/1/619fef9258a272c77f17e77b451a66c163276aef
+z
+Jconsumer/src/main/java/sk/balaz/consumer/consumer/WikipemediaConsumer.java,8/d/8d8974e70a1ce4a24cc4a651aaee93538e5269b5
+x
+Hconsumer/src/main/java/sk/balaz/consumer/consumer/WikimediaConsumer.java,4/1/418065d4b42888dbc0bbb0b312d60df123569b26
